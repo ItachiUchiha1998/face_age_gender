@@ -20,7 +20,7 @@ def read_and_resize(filepath, input_shape=(256, 256)):
     im = Image.open((filepath)).convert('RGB')
     im = im.resize(input_shape)
     im_array = np.array(im, dtype="uint8")#[..., ::-1]
-    return np.array(im_array / (np.max(im_array)+ 0.001), dtype="float32")
+    return np.array(im_array / ( np.max(im_array)+ 0.001 ), dtype="float32")
 
 datagen = ImageDataGenerator(
     rotation_range=6,
