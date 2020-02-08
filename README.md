@@ -57,6 +57,3 @@ following results : <br> Gender : 89.4±1.4<br> Age : 50.1±5.3<br> Those result
 are better than [1] and [2] probably because of the bagging and the pretrained
 weights but worse than [3] probably because Sighthound Inc used a bigger and
 internal Faces dataset for pretraining.
-
-Code to reproduce the results can be found at :
-[https://github.com/CVxTz/face_age_gender](https://github.com/CVxTz/face_age_gender)
