@@ -30,26 +30,6 @@ which is a dataset of face photos in the wild that are labeled into 8 age groups
 There are around 26,580 images (with missing labels in some cases) that are
 pre-split into 5 folds.
 
-### Existing results :
-
-As this dataset is usually used as a benchmark for this type of tasks in many
-research papers, I was able to find many prior **accuracy** results for apparent
-age and gender prediction =>
-
-[[1]
-https://www.openu.ac.il/home/hassner/Adience/EidingerEnbarHassner_tifs.pdf](https://www.openu.ac.il/home/hassner/Adience/EidingerEnbarHassner_tifs.pdf)
-<br> Gender : 76.1±0.9<br> Age : 45.1±2.6
-
-[2]
-[https://www.openu.ac.il/home/hassner/projects/cnn_agegender/CNN_AgeGenderEstimation.pdf](https://www.openu.ac.il/home/hassner/projects/cnn_agegender/CNN_AgeGenderEstimation.pdf)<br>
-Gender : 86.8±1.4<br> Age : 50.7±5.1
-
-[3]
-[https://arxiv.org/pdf/1702.04280.pdf](https://arxiv.org/pdf/1702.04280.pdf)<br>
-Gender : 91<br> Age : 61.3±3.7
-
-### Preprocessing :
-
 Faces are cropped and aligned using this tool :
 [https://www.openu.ac.il/home/hassner/Adience/code.html#inplanealign](https://www.openu.ac.il/home/hassner/Adience/code.html#inplanealign)
 
@@ -73,7 +53,7 @@ under-fitting and optimization issues that occur in deep neural networks.
 ### Results :
 
 We train the model 3 times for each fold and average the predictions and get the
-following results : <br> Gender : 89.4±1.4<br> Age : 57.1±5.3<br> Those results
+following results : <br> Gender : 89.4±1.4<br> Age : 50.1±5.3<br> Those results
 are better than [1] and [2] probably because of the bagging and the pretrained
 weights but worse than [3] probably because Sighthound Inc used a bigger and
 internal Faces dataset for pretraining.
