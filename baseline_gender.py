@@ -140,7 +140,7 @@ if __name__ == "__main__":
             predictions += model.predict(test_images)
             cnt_ave += 1
 
-            test_images = test_images[:, :, ::-1, :]
+            test_images = test_images[ :, :, ::-1, : ]
 
             predictions += model.predict(test_images)
             cnt_ave += 1
